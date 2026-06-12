@@ -41,18 +41,76 @@
 </article>
 </section>
 
+<section id="habilidades">
+    <h2>Habilidade e Tecnologias</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tecnologia</th>
+                <th>Nivel</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Iniciante</td>
+                <td>Capaz de estruturar paginas semânticas e responsivas</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Iniciante</td>
+                <td>Experiencia com flexbox, grid e animaçoes CSS</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>Intermediario</td>
+                <td>Manipulação do DOM</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
 <footer>
     <p>Copyright © 2024 Pamela Cruz</p>
 
     <section id="contato">
         <h2>Contato</h2>
         <p>Tem algum projeto em mente ou quer saber mais sobre mim? Entre em contato!</p>
-        <address>
-            <p>email: <a href="mailto:pam05cruz@gmail.com">pam05cruz@gmail.com</a></p>
-            <p>telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
-            <p>mais um texto</p>
+        <form action="">
+            <label for="nome">Nome: </label>
+            <input type="text" id="name" name="nome" required>
+            <br>
 
-        </address>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" name="telefone" >
+            <br>
+
+            <label for="assunto">Assuntos</label>
+            <select name="assunto" id="assunto">
+                <option value="orçamento">Orçamento</option>
+                <option value="duvida">Duvida</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+            <br>
+
+            <input type="checkbox" id="inscricao" name="inscricao">
+            <label for="inscricao">Deseja receber as novidades? Fique por dentro.</label>
+            <br>
+
+            <input type="submit" value="Enviar mensagem">
+
+
+
+        </form>
     </section>
 </footer>
 </body>
